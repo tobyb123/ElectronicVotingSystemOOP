@@ -63,10 +63,7 @@ namespace ElectronicVotingSystem.Dashboards
             {
                 // If we have votes for election - populate the control on the dashboard - if not then clear the grid view.
                 List<CountVote> countVote = databaseHelper.CountVotesForElection(_selectedElection.ElectionInstanceID);
-                if (countVote == null)
-                    MessageBox.Show("No votes for selected election.", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                else 
-                    dgvVoteCount.DataSource = countVote.Count >= 1 == true ? countVote : null;
+                dgvVoteCount.DataSource = countVote?.Count >= 1 == true ? countVote : null;
             }
         }
 
