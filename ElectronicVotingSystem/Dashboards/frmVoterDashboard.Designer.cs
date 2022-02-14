@@ -61,7 +61,7 @@
             this.chklbVotes.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chklbVotes.FormattingEnabled = true;
             this.chklbVotes.Location = new System.Drawing.Point(345, 132);
-            this.chklbVotes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chklbVotes.Margin = new System.Windows.Forms.Padding(4);
             this.chklbVotes.Name = "chklbVotes";
             this.chklbVotes.Size = new System.Drawing.Size(320, 384);
             this.chklbVotes.TabIndex = 2;
@@ -106,7 +106,7 @@
             this.lsbxElections.FormattingEnabled = true;
             this.lsbxElections.ItemHeight = 20;
             this.lsbxElections.Location = new System.Drawing.Point(16, 132);
-            this.lsbxElections.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lsbxElections.Margin = new System.Windows.Forms.Padding(4);
             this.lsbxElections.Name = "lsbxElections";
             this.lsbxElections.Size = new System.Drawing.Size(320, 384);
             this.lsbxElections.TabIndex = 6;
@@ -116,7 +116,7 @@
             // 
             this.btnCastVote.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCastVote.Location = new System.Drawing.Point(675, 274);
-            this.btnCastVote.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCastVote.Margin = new System.Windows.Forms.Padding(4);
             this.btnCastVote.Name = "btnCastVote";
             this.btnCastVote.Size = new System.Drawing.Size(188, 95);
             this.btnCastVote.TabIndex = 7;
@@ -148,7 +148,10 @@
             this.Controls.Add(this.lblVote);
             this.Controls.Add(this.chklbVotes);
             this.Controls.Add(this.lblElections);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximumSize = new System.Drawing.Size(890, 601);
+            this.MinimumSize = new System.Drawing.Size(890, 601);
             this.Name = "frmVoterDashboard";
             this.Text = "Vote";
             ((System.ComponentModel.ISupportInitialize)(this.electionBindingSource)).EndInit();

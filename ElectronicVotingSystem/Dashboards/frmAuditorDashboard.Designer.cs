@@ -146,7 +146,10 @@
             this.Controls.Add(this.lblHello);
             this.Controls.Add(this.lblVote);
             this.Controls.Add(this.lblElections);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximumSize = new System.Drawing.Size(890, 601);
+            this.MinimumSize = new System.Drawing.Size(890, 601);
             this.Name = "frmAuditorDashboard";
             this.Text = "Vote";
             ((System.ComponentModel.ISupportInitialize)(this.electionBindingSource)).EndInit();
