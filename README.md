@@ -6,8 +6,7 @@ Highlight every folder and file (or press Ctrl + A) and right click > Properties
 If you do not do this, the DLLs and Database will not allow access. So please make sure to do this before opening the code!!
 
 
-![image](https://user-images.githubusercontent.com/99662460/154301619-3802218f-aa69-440d-944b-cdfa7e18a370.png)
-
+![image](https://user-images.githubusercontent.com/99662460/154301815-ece75d16-feee-4277-a986-84706c37d1ef.png)
 
 
 See below for login details for user accounts:
